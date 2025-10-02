@@ -1,0 +1,48 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #1992D4;
+    --secondary-color:#FFFFFF;
+    --all-color:#E2E8F0;
+    --font-color:#636363;
+    --dark-color: black;
+}
+
+
+.roboto roboto-regular{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: 100;
+  }
+
+  aside{
+    display: grid;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding-left: 61px;
+  }
+
+#dashboard{
+    height: 69px ;
+    width: 70px;
+    filter: invert(100%) brightness(200%);
+    margin-top: 55px;
+  }
+
+  
+#home{
+    margin-top: 98px;
+}
+
+.icon{
+    height: 40px ;
+    width: 43px;
+    filter: invert(100%) brightness(200%); 
+}
+
