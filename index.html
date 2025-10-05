@@ -12,61 +12,121 @@
     <title>Admin Dashboard</title>
 </head>
 
-<body>
-    <!--Navbar parte sinistra-->
-    <!--
-    <nav>
-        <img src="./img/magnify.svg" alt="search">
-        <form action="">
-            <input type="search" name="q" id="ricerca" placeholder="Cerca qui...">
-        </form>
-        <img src="./img/cat.png" alt="cat">
-        <h3>Hi there,</h3>
-        <h1>Morgan Oakley (@Morgan)</h1>
--->
-    <!--Navbar sinistra FINE-->
+<body class="roboto-regular">
+    <aside>
+        <div class="center">
+            <img src="./img/view-dashboard.svg" width="38" height="39" alt="dashboard" id="dashboard">
+            <span id="dashboard-center">
+                Dashboard
+            </span>
+        </div>
+        <div class="center" id="home">
+            <img src="./img/home.svg" width="21" height="17" alt="home" class="icon">
+            <span class="text-center"> Home</span>
+        </div>
 
-    <!--Navbar parte destra-->
-    <!--
-        <img src="./img/bell-ring-outline.svg" alt="ring">
-        <img src="./img/cat.png" alt="cat">
-        <h2>Morgan Oakley</h2>
-        <form action="">
-            <input type="button" value="New">
-            <input type="button" value="Upoload">
-            <input type="button" value="Share">
-        </form>
-    -->
-    <!--Navbar destra FINE-->
-    <!--
+        <div class="center">
+            <img src="./img/card-account-details.svg" width="23" height="19" alt="profile" class="icon">
+            <span class="text-center"> Profile</span>
+        </div>
+        <div class="center">
+            <img src="./img/message-reply.svg" width="20" height="21" alt="message" class="icon">
+            <span class="text-center"> Messages</span>
+        </div>
+        <div class="center">
+            <img src="./img/clock-time-three.svg" width="20" height="20" alt="history" class="icon">
+            <span class="text-center">History</span>
+        </div>
+
+        <div class="center">
+            <img src="./img/note-multiple.svg" width="22" height="23" alt="task" class="icon">
+            <span class="text-center">Tasks</span>
+        </div>
+
+        <div class="center" id="communities">
+            <img src="./img/account-group.svg" width="26" height="15" alt="communities" class="icon">
+            <span class="text-center">Communities</span>
+        </div>
+
+        <div class="center">
+            <img src="./img/settings.svg" width="20" height="20" alt="settings" class="icon" id="settings">
+            <span class="text-center">Settings</span>
+        </div>
+
+        <div class="center">
+            <img src="./img/help-box.svg" width="20" height="20" alt="support" class="icon">
+            <span class="text-center">Support</span>
+        </div>
+        <div class="center">
+            <img src="./img/shield-check.svg" width="22" height="23" alt="privacy" class="icon">
+            <span class="text-center">Privacy</span>
+        </div>
+    </aside>
+
+    <nav>
+        <div class="nav-top">
+            <div class="search">
+                <img src="./img/magnify.svg" width="40" height="50" alt="search">
+                <form action="">
+                    <input type="search" name="q" id="ricerca">
+                </form>
+            </div>
+
+            <div class="cat-search">
+
+
+                <img src="./img/bell-ring-outline.svg" width="22" height="22" alt="ring">
+                <img src="./img/cat.png" width="50" height="48" alt="cat">
+                <h2>Morgan Oakley</h2>
+
+            </div>
+        </div>
+        <div class="nav-bottom">
+            <img src="./img/cat.png" width="77" height="72" alt="cat">
+            <div class="text-search">
+                <div>
+                    <strong>Hi there,</strong>
+                    <h2>Morgan Oakley (@Morgan)</h2>
+                </div>
+            </div>
+            <div class="container-bottons">
+                <div class="bottons">
+                    <form action="">
+                        <input type="button" value="New" class="button-primary">
+                        <input type="button" value="Upload" class="button-primary">
+                        <input type="button" value="Share" class="button-primary">
+                    </form>
+                </div>
+            </div>
+        </div>
     </nav>
--->
-    <!--
+
+    <!---
     <main>
         <section class="projects">
         <span>Your Projects</span>
         <div class="card">
             <h3>Super Cool Project</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <img src="./img/star-plus-outline.svg" alt="star">
-            <img src="./img/eye-plus-outline.svg" alt="eye">
-            <img src="./img/share-variant-outline.svg" alt="share">
+            <img src="./img/star-plus-outline.svg" width="37" height="34" alt="star">
+            <img src="./img/eye-plus-outline.svg" alt="eye" width="41" height="34">
+            <img src="./img/share-variant-outline.svg" alt="share" width="46" height="42">
         </div>
 
         <div class="card">
             <h3>Less Cool Project</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <img src="./img/star-plus-outline.svg" alt="star">
-            <img src="./img/eye-plus-outline.svg" alt="eye">
-            <img src="./img/share-variant-outline.svg" alt="share">
+            <img src="./img/star-plus-outline.svg" width="37" height="34" alt="star">
+            <img src="./img/eye-plus-outline.svg" alt="eye" width="41" height="34">
+            <img src="./img/share-variant-outline.svg" alt="share" width="46" height="42">
         </div>
 
         <div class="card">
             <h3>Impossible App</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <img src="./img/star-plus-outline.svg" alt="star">
-            <img src="./img/eye-plus-outline.svg" alt="eye">
-            <img src="./img/share-variant-outline.svg" alt="share">
+            <img src="./img/star-plus-outline.svg" width="37" height="34" alt="star">
+            <img src="./img/eye-plus-outline.svg" alt="eye" width="41" height="34">
+            <img src="./img/share-variant-outline.svg" alt="share" width="46" height="42">
         </div>
 
         <div class="card">
@@ -88,9 +148,9 @@
         <div class="card">
             <h3>Money Maker</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <img src="./img/star-plus-outline.svg" alt="star">
-            <img src="./img/eye-plus-outline.svg" alt="eye">
-            <img src="./img/share-variant-outline.svg" alt="share">
+            <img src="./img/star-plus-outline.svg" width="37" height="34" alt="star">
+            <img src="./img/eye-plus-outline.svg" alt="eye" width="41" height="34">
+            <img src="./img/share-variant-outline.svg" alt="share" width="46" height="42">
         </div>
     </section>
 
@@ -109,19 +169,19 @@
 
     <section class="trending">
         <span>Trending</span>
-        <img src="./img/dog.png" alt="dog">
+        <img src="./img/dog.png" alt="dog" class="circle">
         <h3>@tegan</h3>
         <p>World Peace Builder</p>
 
-        <img src="./img/cat.png" alt="cat">
+        <img src="./img/cat.png" alt="cat" class="circle">
         <h3>@morgan</h3>
         <p>Super Cool Project</p>
 
-        <img src="./img/superman.png" alt="superman">
+        <img src="./img/superman.png" alt="superman" class="circle">
         <h3>@kendall</h3>
         <p>Life Changing App</p>
 
-        <img src="./img/snow.png" alt="snow">
+        <img src="./img/snow.png" alt="snow" class="circle">
         <h3>@alex</h3>
         <p>No Traffic Maker</p>
 
@@ -129,56 +189,6 @@
 
     </main>
 -->
-    <aside>
-        <div class="center">
-            <img src="./img/view-dashboard.svg" alt="dashboard" id="dashboard">
-            <span id="dashboard-center">
-                Dashboard
-            </span>
-        </div>
-        <div class="center" id="home">
-            <img src="./img/home.svg" alt="home" class="icon">
-            <span class="text-center"> Home</span>
-        </div>
-
-        <div class="center">
-            <img src="./img/card-account-details.svg" alt="profile" class="icon">
-            <span class="text-center"> Profile</span>
-        </div>
-        <div class="center">
-            <img src="./img/message-reply.svg" alt="message" class="icon">
-            <span class="text-center"> Messages</span>
-        </div>
-        <div class="center">
-            <img src="./img/clock-time-three.svg" alt="history" class="icon">
-            <span class="text-center">History</span>
-        </div>
-
-        <div class="center">
-            <img src="./img/note-multiple.svg" alt="task" class="icon">
-            <span class="text-center">Tasks</span>
-        </div>
-
-        <div class="center" id="communities">
-            <img src="./img/account-group.svg" alt="communities" class="icon">
-            <span class="text-center">Communities</span>
-        </div>
-
-        <div class="center">
-            <img src="./img/settings.svg" alt="settings" class="icon" id="settings">
-            <span class="text-center">Settings</span>
-        </div>
-
-        <div class="center">
-            <img src="./img/help-box.svg" alt="support" class="icon">
-            <span class="text-center">Support</span>
-        </div>
-        <div class="center">
-            <img src="./img/shield-check.svg" alt="privacy" class="icon">
-            <span class="text-center">Privacy</span>
-        </div>
-    </aside>
-
 </body>
 
 </html>
