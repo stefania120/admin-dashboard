@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -14,181 +16,207 @@
 
 <body class="roboto-regular">
     <aside>
-        <div class="center">
-            <img src="./img/view-dashboard.svg" width="38" height="39" alt="dashboard" id="dashboard">
-            <span id="dashboard-center">
-                Dashboard
-            </span>
-        </div>
-        <div class="center" id="home">
-            <img src="./img/home.svg" width="21" height="17" alt="home" class="icon">
-            <span class="text-center"> Home</span>
-        </div>
-
-        <div class="center">
-            <img src="./img/card-account-details.svg" width="23" height="19" alt="profile" class="icon">
-            <span class="text-center"> Profile</span>
-        </div>
-        <div class="center">
-            <img src="./img/message-reply.svg" width="20" height="21" alt="message" class="icon">
-            <span class="text-center"> Messages</span>
-        </div>
-        <div class="center">
-            <img src="./img/clock-time-three.svg" width="20" height="20" alt="history" class="icon">
-            <span class="text-center">History</span>
-        </div>
-
-        <div class="center">
-            <img src="./img/note-multiple.svg" width="22" height="23" alt="task" class="icon">
-            <span class="text-center">Tasks</span>
-        </div>
-
-        <div class="center" id="communities">
-            <img src="./img/account-group.svg" width="26" height="15" alt="communities" class="icon">
-            <span class="text-center">Communities</span>
-        </div>
-
-        <div class="center">
-            <img src="./img/settings.svg" width="20" height="20" alt="settings" class="icon" id="settings">
-            <span class="text-center">Settings</span>
-        </div>
-
-        <div class="center">
-            <img src="./img/help-box.svg" width="20" height="20" alt="support" class="icon">
-            <span class="text-center">Support</span>
-        </div>
-        <div class="center">
-            <img src="./img/shield-check.svg" width="22" height="23" alt="privacy" class="icon">
-            <span class="text-center">Privacy</span>
-        </div>
+        <nav>
+            <ul>
+                <li class="center">
+                    <img src="./assets/img/view-dashboard.svg" width="38" height="39" alt="dashboard" id="dashboard">
+                    <h2>Dashboard</h2>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/home.svg" width="21" height="21" alt="home" class="icon">
+                        <strong>Home</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/card-account-details.svg" width="23" height="19" alt="profile"
+                            class="icon">
+                        <strong>Profile</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/message-reply.svg" width="20" height="21" alt="message" class="icon">
+                        <strong>Messages</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/clock-time-three.svg" width="20" height="20" alt="history" class="icon">
+                        <strong>History</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/note-multiple.svg" width="22" height="23" alt="task" class="icon">
+                        <strong>Tasks</strong>
+                    </a>
+                </li>
+                <li id="communities">
+                    <a href="#">
+                        <img src="./assets/img/account-group.svg" width="26" height="18" alt="communities" class="icon">
+                        <strong>Communities</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/settings.svg" width="20" height="20" alt="settings" class="icon"
+                            id="settings">
+                        <strong>Settings</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/help-box.svg" width="20" height="20" alt="support" class="icon">
+                        <strong>Support</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/img/shield-check.svg" width="22" height="23" alt="privacy" class="icon">
+                        <strong>Privacy</strong>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </aside>
 
-    <nav>
-        <div class="nav-top">
-            <div class="search">
-                <img src="./img/magnify.svg" width="40" height="50" alt="search">
-                <form action="">
-                    <input type="search" name="q" id="ricerca">
-                </form>
-            </div>
-
-            <div class="cat-search">
-
-
-                <img src="./img/bell-ring-outline.svg" width="22" height="22" alt="ring">
-                <img src="./img/cat.png" width="50" height="48" alt="cat">
-                <h2>Morgan Oakley</h2>
-
-            </div>
-        </div>
-        <div class="nav-bottom">
-            <img src="./img/cat.png" width="77" height="72" alt="cat">
-            <div class="text-search">
+    <main>
+        <header>
+            <div class="headerLeft">
                 <div>
+                    <form action="">
+                        <img src="./assets/img/magnify.svg" width="40" height="50" alt="search">
+                        <input type="search" id="mySearch" name="q">
+                    </form>
+                </div>
+
+                <div class="catSearch">
+                    <img src="./assets/img/bell-ring-outline.svg" width="22" height="22" alt="ring">
+                    <img src="./assets/img/cat.png" width="50" height="48" alt="cat">
+                    <h2>Morgan Oakley</h2>
+                </div>
+            </div>
+
+            <div class="headerRight">
+                <div>
+                    <img src="./assets/img/cat.png" width="77" height="72" alt="cat">
+                </div>
+
+                <div class="greetings">
                     <strong>Hi there,</strong>
                     <h2>Morgan Oakley (@Morgan)</h2>
                 </div>
-            </div>
-            <div class="container-bottons">
-                <div class="bottons">
-                    <form action="">
-                        <input type="button" value="New" class="button-primary">
-                        <input type="button" value="Upload" class="button-primary">
-                        <input type="button" value="Share" class="button-primary">
-                    </form>
+
+                <div class="buttons">
+                    <input type="button" value="New" class="buttonPrimary">
+                    <input type="button" value="Upload" class="buttonPrimary">
+                    <input type="button" value="Share" class="buttonPrimary">
                 </div>
             </div>
-        </div>
-    </nav>
+        </header>
 
-    <!---
-    <main>
-        <section class="projects">
-        <span>Your Projects</span>
-        <div class="card">
-            <h3>Super Cool Project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <img src="./img/star-plus-outline.svg" width="37" height="34" alt="star">
-            <img src="./img/eye-plus-outline.svg" alt="eye" width="41" height="34">
-            <img src="./img/share-variant-outline.svg" alt="share" width="46" height="42">
-        </div>
+        <div class="container">
+            <section class="projects">
+                <h2>Your Projects</h2>
+                <div class="wrapCard">
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <img src="./assets/img/star-plus-outline.svg" width="37" height="34" alt="star">
+                        <img src="./assets/img/eye-plus-outline.svg" alt="eye" width="41" height="34">
+                        <img src="./assets/img/share-variant-outline.svg" alt="share" width="46" height="42">
+                    </div>
 
-        <div class="card">
-            <h3>Less Cool Project</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <img src="./img/star-plus-outline.svg" width="37" height="34" alt="star">
-            <img src="./img/eye-plus-outline.svg" alt="eye" width="41" height="34">
-            <img src="./img/share-variant-outline.svg" alt="share" width="46" height="42">
-        </div>
+                    <div class="card">
+                        <h3>Less Cool Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <img src="./assets/img/star-plus-outline.svg" width="37" height="34" alt="star">
+                        <img src="./assets/img/eye-plus-outline.svg" alt="eye" width="41" height="34">
+                        <img src="./assets/img/share-variant-outline.svg" alt="share" width="46" height="42">
+                    </div>
 
-        <div class="card">
-            <h3>Impossible App</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <img src="./img/star-plus-outline.svg" width="37" height="34" alt="star">
-            <img src="./img/eye-plus-outline.svg" alt="eye" width="41" height="34">
-            <img src="./img/share-variant-outline.svg" alt="share" width="46" height="42">
-        </div>
+                    <div class="card">
+                        <h3>Impossible App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <img src="./assets/img/star-plus-outline.svg" width="37" height="34" alt="star">
+                        <img src="./assets/img/eye-plus-outline.svg" alt="eye" width="41" height="34">
+                        <img src="./assets/img/share-variant-outline.svg" alt="share" width="46" height="42">
+                    </div>
 
-        <div class="card">
-            <h3>Easy Peasy App</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <img src="./img/star-plus-outline.svg" alt="star">
-            <img src="./img/eye-plus-outline.svg" alt="eye">
-            <img src="./img/share-variant-outline.svg" alt="share">
-        </div>
+                    <div class="card">
+                        <h3>Easy Peasy App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <img src="./assets/img/star-plus-outline.svg" width="37" height="34" alt="star">
+                        <img src="./assets/img/eye-plus-outline.svg" alt="eye" width="41" height="34">
+                        <img src="./assets/img/share-variant-outline.svg" alt="share" width="46" height="42">
+                    </div>
 
-        <div class="card">
-            <h3>Ad Blocker</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <img src="./img/star-plus-outline.svg" alt="star">
-            <img src="./img/eye-plus-outline.svg" alt="eye">
-            <img src="./img/share-variant-outline.svg" alt="share">
-        </div>
+                    <div class="card">
+                        <h3>Ad Blocker</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <img src="./assets/img/star-plus-outline.svg" width="37" height="34" alt="star">
+                        <img src="./assets/img/eye-plus-outline.svg" alt="eye" width="41" height="34">
+                        <img src="./assets/img/share-variant-outline.svg" alt="share" width="46" height="42">
+                    </div>
 
-        <div class="card">
-            <h3>Money Maker</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <img src="./img/star-plus-outline.svg" width="37" height="34" alt="star">
-            <img src="./img/eye-plus-outline.svg" alt="eye" width="41" height="34">
-            <img src="./img/share-variant-outline.svg" alt="share" width="46" height="42">
-        </div>
-    </section>
+                    <div class="card">
+                        <h3>Money Maker</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <img src="./assets/img/star-plus-outline.svg" width="37" height="34" alt="star">
+                        <img src="./assets/img/eye-plus-outline.svg" alt="eye" width="41" height="34">
+                        <img src="./assets/img/share-variant-outline.svg" alt="share" width="46" height="42">
+                    </div>
+                </div>
+            </section>
 
-    <section class="announcements">
-        <span>Announcements</span>
-        <div class="card">
-            <h3>Site Maintenance</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit!</p>
-            <hr>
-            <h3>Community Share Day</h3>
-            <p>Nesciunt dicta voluptates recusandae delectus quaerat expedita? Quo.</p>
-            <hr>
-            <p> Alias dicta neque non voluptates hic ab ex nesciunt itaque rerum vero provident ea consequatur cumque similique veniam iure.</p>
-        </div>
-    </section>
+            <div class="wrap">
+                <section class="announcements">
+                    <h2>Announcements</h2>
+                    <div class="card">
+                        <h3>Site Maintenance</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit!</p>
+                        <hr>
+                        <h3>Community Share Day</h3>
+                        <p>Nesciunt dicta voluptates recusandae delectus quaerat expedita? Quo.</p>
+                        <hr>
+                        <p> Alias dicta neque non voluptates hic ab ex nesciunt itaque rerum vero provident ea
+                            consequatur
+                            cumque similique veniam iure.</p>
+                    </div>
+                </section>
 
-    <section class="trending">
-        <span>Trending</span>
-        <img src="./img/dog.png" alt="dog" class="circle">
-        <h3>@tegan</h3>
-        <p>World Peace Builder</p>
+                <section class="trending">
+                    <h2>Trending</h2>
+                    <div class="card">
+                        <div class="diFlex">
+                            <img src="./assets/img/dog.png" alt="dog" class="circle">
+                            <h3>@tegan</h3>
+                            <p>World Peace Builder</p>
+                        </div>
 
-        <img src="./img/cat.png" alt="cat" class="circle">
-        <h3>@morgan</h3>
-        <p>Super Cool Project</p>
+                        <div class="diFlex">
+                            <img src="./assets/img/cat.png" alt="cat" class="circle">
+                            <h3>@morgan</h3>
+                            <p>Super Cool Project</p>
+                        </div>
 
-        <img src="./img/superman.png" alt="superman" class="circle">
-        <h3>@kendall</h3>
-        <p>Life Changing App</p>
+                        <div class="diFlex">
+                            <img src="./assets/img/superman.png" alt="superman" class="circle">
+                            <h3>@kendall</h3>
+                            <p>Life Changing App</p>
+                        </div>
 
-        <img src="./img/snow.png" alt="snow" class="circle">
-        <h3>@alex</h3>
-        <p>No Traffic Maker</p>
-
-    </section>
-
+                        <div class="diFlex">
+                            <img src="./assets/img/snow.png" alt="snow" class="circle">
+                            <h3>@alex</h3>
+                            <p>No Traffic Maker</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
     </main>
--->
 </body>
 
-</html>
+</html> 
