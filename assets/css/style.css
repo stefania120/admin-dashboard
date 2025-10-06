@@ -1,0 +1,254 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1992D4;
+    --secondary-color: #FFFFFF;
+    --all-color: #E2E8F0;
+    --font-color: #636363;
+    --dark-color: black;
+    --search-color: #E2E8F0;
+    --hover-color: #0F7490;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings: 100;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+}
+
+/* ASIDE */
+aside>nav {
+    display: grid;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 17rem;
+    height: 200vh;
+}
+
+li {
+    list-style: none;
+    padding-bottom: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--all-color);
+    display: flex;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+#dashboard {
+    filter: invert(100%) brightness(200%);
+    margin-left: 21px;
+}
+
+#communities {
+    margin-bottom: 80px;
+}
+
+.icon {
+    filter: invert(100%) brightness(200%);
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.center {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 8px;
+    margin-top: 0.5rem;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 3rem;
+}
+
+.headerLeft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1rem;
+}
+
+.mLeft2{
+    margin-left: 2rem;;
+
+}
+
+.headerRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.2rem;
+}
+
+form img {
+    height: 1.9rem;
+}
+
+#mySearch {
+   height: 1.9rem;
+    width: 39rem;
+    border: none;
+    border-radius: 0.9rem;
+    background-color: var(--search-color);
+}
+
+.search {
+    display: flex;
+}
+
+.catSearch {
+    display: flex;
+    margin-left: 83px;
+    margin-top: 25px;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttons {
+    display: flex;
+    margin-left: 23.5rem;
+}
+
+/* .containerButtons {
+    margin-top: 15px;
+    margin-right: 10px;
+} */
+
+.buttonPrimary {
+    background-color: var(--primary-color);
+    color: var(--all-color);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 18px;
+    margin-right: 1rem;
+}
+
+.buttonPrimary:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+/* SEZIONE PROJECTS */
+main {
+    background-color: var(--all-color);
+}
+
+.projects {
+    display: flex;
+    /* gap: 20px;
+    padding: 20px;
+    margin-top: 20px; */
+}
+
+p{
+    color: var(--font-color);
+}
+
+.trending strong{
+    color: var(--dark-color);
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: -10px 0 0 #F0B429;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 1rem;
+    width: 21rem;
+    height: 12rem;
+}
+
+.wrapCard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.diFlex {
+    display: flex;
+    
+}
+
+.colonna {
+    flex: 1;                    /* Ogni colonna occupa metà spazio */
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .cardRight{
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 1rem;
+    width:  19rem;
+    height: 20rem;
+  }
+
+.yourProjects{
+    margin-left: 2rem;
+}
+
+.announcementsText{
+    margin-left: 1rem;
+}
+
+.trendingText{
+    margin-left: 1rem;
+}
+
+.trending{
+    box-shadow:  #F0B429;
+}
